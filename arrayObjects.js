@@ -19,16 +19,18 @@ const fruits =[ {name: "Oranges", color:"orange", kgs: 4},
 
  
  // map method 
+ //creates a new array ,enabling data to be manipulated without changing the original array.
  const fruitColors= fruits.map(fruit=> fruit.color)
  console.log(fruitColors)
 
  //filter method
-
+ //ccreates a new array that meet a specified condition, in this case the color of the fruit is yellow
  const yellowFruits= fruits.filter(fruit=> fruit.color === "yellow")
  console.log(yellowFruits)
 
 
  //reduce method
+ //one large array becomes one single value, one smaller array, in this case the heaviest fruit
  //The method checks every item 1 by 1, it starts with oranges and sees it has 4 kgs, then that for now is the max weight, 
  // then it picks the second item which is bananas and it has 6kgs and it sees bananas has more weight so it drops oranges which were the heaviest and records bananas which are heavier.
  //it goes to the next object until it finds the heaviest, ie , it reduces all elements till the max weight is met,
